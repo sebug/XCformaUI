@@ -11,6 +11,8 @@
 		EBDCA04F2B580E2D001968FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCA04E2B580E2D001968FE /* ContentView.swift */; };
 		EBDCA0512B580E2E001968FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBDCA0502B580E2E001968FE /* Assets.xcassets */; };
 		EBDCA0542B580E2E001968FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBDCA0532B580E2E001968FE /* Preview Assets.xcassets */; };
+		EBDCA0612B580E6F001968FE /* XCformaUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCA0602B580E6F001968FE /* XCformaUIUITests.swift */; };
+		EBDCA0632B580E6F001968FE /* XCformaUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCA0622B580E6F001968FE /* XCformaUIUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,10 +21,20 @@
 		EBDCA04E2B580E2D001968FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EBDCA0502B580E2E001968FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBDCA0532B580E2E001968FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EBDCA05E2B580E6F001968FE /* XCformaUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCformaUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBDCA0602B580E6F001968FE /* XCformaUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCformaUIUITests.swift; sourceTree = "<group>"; };
+		EBDCA0622B580E6F001968FE /* XCformaUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCformaUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EBDCA0462B580E2D001968FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBDCA05B2B580E6F001968FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				EBDCA04B2B580E2D001968FE /* XCformaUI */,
+				EBDCA05F2B580E6F001968FE /* XCformaUIUITests */,
 				EBDCA04A2B580E2D001968FE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				EBDCA0492B580E2D001968FE /* XCformaUI.app */,
+				EBDCA05E2B580E6F001968FE /* XCformaUIUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +81,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		EBDCA05F2B580E6F001968FE /* XCformaUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EBDCA0602B580E6F001968FE /* XCformaUIUITests.swift */,
+				EBDCA0622B580E6F001968FE /* XCformaUIUITestsLaunchTests.swift */,
+			);
+			path = XCformaUIUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -87,6 +110,23 @@
 			productReference = EBDCA0492B580E2D001968FE /* XCformaUI.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EBDCA05D2B580E6F001968FE /* XCformaUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBDCA0642B580E6F001968FE /* Build configuration list for PBXNativeTarget "XCformaUIUITests" */;
+			buildPhases = (
+				EBDCA05A2B580E6F001968FE /* Sources */,
+				EBDCA05B2B580E6F001968FE /* Frameworks */,
+				EBDCA05C2B580E6F001968FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XCformaUIUITests;
+			productName = XCformaUIUITests;
+			productReference = EBDCA05E2B580E6F001968FE /* XCformaUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,6 +138,9 @@
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					EBDCA0482B580E2D001968FE = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					EBDCA05D2B580E6F001968FE = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
@@ -116,6 +159,7 @@
 			projectRoot = "";
 			targets = (
 				EBDCA0482B580E2D001968FE /* XCformaUI */,
+				EBDCA05D2B580E6F001968FE /* XCformaUIUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +174,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EBDCA05C2B580E6F001968FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,6 +190,15 @@
 			files = (
 				EBDCA04F2B580E2D001968FE /* ContentView.swift in Sources */,
 				EBDCA04D2B580E2D001968FE /* XCformaUIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBDCA05A2B580E6F001968FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBDCA0612B580E6F001968FE /* XCformaUIUITests.swift in Sources */,
+				EBDCA0632B580E6F001968FE /* XCformaUIUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +382,38 @@
 			};
 			name = Release;
 		};
+		EBDCA0652B580E6F001968FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 54KLWW8ME6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.sebug.XCformaUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBDCA0662B580E6F001968FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 54KLWW8ME6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.sebug.XCformaUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -339,6 +431,15 @@
 			buildConfigurations = (
 				EBDCA0582B580E2E001968FE /* Debug */,
 				EBDCA0592B580E2E001968FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBDCA0642B580E6F001968FE /* Build configuration list for PBXNativeTarget "XCformaUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBDCA0652B580E6F001968FE /* Debug */,
+				EBDCA0662B580E6F001968FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
